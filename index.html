@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saturday Islamic Academy · Student Portfolios</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=Amiri&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f3ea;--card:#fffdf8;--ink:#1c2a24;--mute:#6b7a72;--green:#0f4c3a;--green2:#1b6b52;--gold:#b8923a;--line:#e6dfcd;--hero:#0b3a2c;--hero2:#145a45;--bad:#b4443a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1511;--card:#14201a;--ink:#efe9d8;--mute:#98a89f;--green:#58c4a0;--green2:#3fa383;--gold:#d8b45c;--line:#25362d;--hero:#07251c;--hero2:#0f4636;--bad:#e27d72}}
+:root[data-theme="dark"]{--bg:#0d1511;--card:#14201a;--ink:#efe9d8;--mute:#98a89f;--green:#58c4a0;--green2:#3fa383;--gold:#d8b45c;--line:#25362d;--hero:#07251c;--hero2:#0f4636;--bad:#e27d72}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.15}
+.hero{background:radial-gradient(circle at 80% 0,var(--hero2),var(--hero));color:#f4ecd6;text-align:center;padding:64px 22px 84px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;opacity:.07;background:repeating-conic-gradient(#fff 0 25%,transparent 0 50%) 0 0/36px 36px}
+.hero>*{position:relative}
+.bis{font:400 30px Amiri,serif;color:var(--gold);direction:rtl;margin-bottom:10px}
+.hero h1{font-size:clamp(38px,8vw,64px)}
+.hero p{max-width:540px;margin:14px auto 0;color:#d6ccb0}
+.orn{width:90px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px auto 0}
+main{max-width:1060px;margin:-44px auto 0;padding:0 18px 60px;position:relative}
+.top{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 18px;background:var(--hero);color:#d6ccb0;font-size:13px}
+.top .grow{flex:1}.top button{background:none;border:1px solid #d6ccb055;color:#f4ecd6;border-radius:99px;padding:5px 14px;cursor:pointer;font:500 13px Inter}
+.serr{color:#ffb4a8;font-weight:600}
+.top button.hl{background:var(--gold);color:#1c1608;border-color:var(--gold);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.sc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;cursor:pointer;box-shadow:0 10px 30px rgba(11,58,44,.08);transition:.25s;text-align:left;font:inherit;color:inherit}
+.sc:hover{transform:translateY(-4px);border-color:var(--gold)}
+.av{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),var(--green2));color:#f4ecd6;font:600 26px 'Cormorant Garamond',serif;margin-bottom:14px;outline:2px solid var(--gold);outline-offset:3px}
+.sc h3{font-size:26px}.sc small{color:var(--mute);display:block}
+.tag{display:inline-block;margin-top:12px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.bar{height:6px;border-radius:9px;background:var(--line);overflow:hidden;margin-top:14px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--green2))}
+.back{background:none;border:0;color:var(--green);font:500 15px Inter;cursor:pointer;padding:18px 0}
+.ph{background:linear-gradient(135deg,var(--hero),var(--hero2));color:#f4ecd6;border-radius:22px;padding:30px;display:flex;gap:22px;align-items:center;flex-wrap:wrap;box-shadow:0 14px 36px rgba(11,58,44,.2)}
+.ph h2{font-size:clamp(32px,6vw,46px)}.ph .meta{color:#d6ccb0;font-size:14px}
+.zoom{margin-left:auto;background:var(--gold);color:#1c1608;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:99px;display:inline-block}
+.tabs{display:flex;gap:6px;margin:24px 0 16px;overflow-x:auto;border-bottom:1px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:12px 16px;font:500 15px Inter;color:var(--mute);cursor:pointer;white-space:nowrap}
+.tabs button.on{color:var(--green);border-color:var(--gold)}
+.pn{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:16px}
+.pn h3{font-size:26px;margin-bottom:14px}
+.row{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--line)}.row:first-of-type{border-top:0}
+.row b{min-width:110px;color:var(--green);font-weight:600}
+.rm{border-left:3px solid var(--gold);padding:4px 0 4px 16px;margin-bottom:16px}.rm time{font-size:12px;color:var(--mute);letter-spacing:.05em}
+.sk{margin:14px 0}.sk div{display:flex;justify-content:space-between;font-size:14px}
+.sc2{font:600 44px 'Cormorant Garamond',serif;color:var(--gold)}
+.st{display:inline-block;padding:3px 12px;border-radius:99px;background:var(--line);font-size:12px;font-weight:600}
+input,textarea{width:100%;font:inherit;color:inherit;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:2px 0}
+.x{background:none;border:0;color:var(--bad);cursor:pointer;font-size:18px}
+.add{background:none;border:1px dashed var(--gold);color:var(--gold);border-radius:10px;padding:8px 14px;cursor:pointer;font:500 14px Inter;margin-top:8px}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:30px 18px}
+.note{background:var(--card);border:1px dashed var(--gold);border-radius:12px;padding:10px 14px;font-size:13px;margin-bottom:14px}
+.lg{max-width:420px;margin:0 auto 16px}.lg label{display:block;font-size:13px;color:var(--mute);margin:14px 0 2px}.lg .tabs{margin:0 0 6px}
+.zoom.btn{width:100%;margin:18px 0 0;border:0;cursor:pointer;font:600 16px Inter;text-align:center;display:block}
+.zoom.btn[disabled]{opacity:.6;cursor:wait}
+.err{color:var(--bad);font-size:14px;margin-top:10px;min-height:1.2em}
+.lnk{background:none;border:0;color:var(--mute);text-decoration:underline;cursor:pointer;font:inherit;font-size:13px;margin-top:10px}
+.mut{color:var(--mute);font-size:13px}
+.tbw{overflow-x:auto}.tb{width:100%;border-collapse:collapse;font-size:14px}.tb th,.tb td{text-align:left;padding:6px 10px 6px 0;border-top:1px solid var(--line)}.tb input{min-width:130px}
+@media(max-width:560px){.zoom{margin-left:0;width:100%;text-align:center}.row{flex-direction:column;gap:2px}}
+</style></head><body>
+<div id="app"></div>
+<footer><div>Saturday Islamic Academy · Nurturing knowledge, character &amp; faith</div><div>All class times are in Mauritius Time (MUT, UTC+4)</div></footer>
+<script>
+const blank={id:"",u:"",p:"",name:"New Student",age:"",level:"Class level",time:"Saturdays · time (MUT)",zoom:"",zid:"",zpass:"",scheme:[{t:"Week 1",x:""}],remarks:[],skills:[{n:"Skill",v:0}],as:{date:"End of year",status:"Upcoming",items:[{n:"Criterion",v:""}],c:""}};
+const tpl={scheme:{t:"New",x:""},remarks:{d:new Date().toISOString().slice(0,10),x:""},skills:{n:"Skill",v:0},items:{n:"Criterion",v:""}};
+
+/* ---------- state ---------- */
+let M="load",LT="p",ERR="",CERR="",LU="",busy=false;     // screen mode, login tab, messages
+let S=null,cur=null,tab=0,edit=false,arm=0;               // portfolio data + navigation
+let DATA=null,PUB={title:"Saturday Islamic Academy",sub:"A personal learning portfolio for every student — classes, progress and achievements in one place."};
+let TD=null,TK=null,TEACH=null,KIDS={},KC={},LAST={},OUTD=null,PEND=false,CHG=false;
+let STAT="",SERR=false,timer=null,chain=Promise.resolve();
+
+/* ---------- crypto (AES-GCM, key from password via PBKDF2) ---------- */
+const enc=new TextEncoder(),dec=new TextDecoder();
+function b64(u){u=new Uint8Array(u);let s="";for(let i=0;i<u.length;i+=8192)s+=String.fromCharCode.apply(null,u.subarray(i,i+8192));return btoa(s)}
+const unb64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const hex=u=>[...new Uint8Array(u)].map(b=>b.toString(16).padStart(2,"0")).join("");
+async function key(pw,salt){const m=await crypto.subtle.importKey("raw",enc.encode(pw),"PBKDF2",false,["deriveKey"]);return crypto.subtle.deriveKey({name:"PBKDF2",salt,iterations:300000,hash:"SHA-256"},m,{name:"AES-GCM",length:256},false,["encrypt","decrypt"])}
+async function seal(k,obj){const iv=crypto.getRandomValues(new Uint8Array(12));const ct=await crypto.subtle.encrypt({name:"AES-GCM",iv},k,enc.encode(JSON.stringify(obj)));return{iv:b64(iv),ct:b64(ct)}}
+async function open(k,d){return JSON.parse(dec.decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:unb64(d.iv)},k,unb64(d.ct))))}
+const uhash=async u=>hex(await crypto.subtle.digest("SHA-256",enc.encode("sia-parent:"+u)));
+
+/* ---------- helpers ---------- */
+const $=id=>document.getElementById(id);
+const E=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const AL="abcdefghjkmnpqrstuvwxyz23456789";
+const genPass=()=>{const r=crypto.getRandomValues(new Uint8Array(12));return[0,4,8].map(i=>[...r.slice(i,i+4)].map(x=>AL[x%AL.length]).join("")).join("-")};
+const newId=()=>"k"+hex(crypto.getRandomValues(new Uint8Array(4)));
+const uniq=(b,list)=>{let u=b,i=2;while(list.includes(u))u=b+i++;return u};
+const validUrl=u=>/^https?:\/\/\S+$/i.test(u||"")&&!/^https?:\/\/[a-z0-9.]*zoom\.us\/j\/?$/i.test(u);
+const avg=s=>Math.round(s.skills.reduce((a,k)=>a+(+k.v||0),0)/(s.skills.length||1));
+const kidRec=s=>{const{u,p,...r}=s;return r};
+const normOne=s=>({...s,u:String(s.u||"").trim().toLowerCase(),p:String(s.p||"")});
+const kjson=s=>JSON.stringify([s.u,s.p,kidRec(s)]);
+const f=(p,v,ph="",ta)=>edit?(ta?`<textarea data-p="${p}" rows="2" placeholder="${E(ph)}">${E(v)}</textarea>`:`<input data-p="${p}" value="${E(v)}" placeholder="${E(ph)}">`):E(v);
+function setStat(m,err){STAT=m;SERR=!!err;const el=$("stat");if(el){el.textContent=m;el.className=err?"serr":""}}
+
+/* ---------- building the data file: everything is encrypted before it leaves this page ---------- */
+async function buildData(st){
+ const kids=[];
+ for(const s of st){const j=kjson(s);let e=KIDS[s.id];
+  if(!e||LAST["kid:"+s.id]!==j){let kc=KC[s.id];if(!kc||kc.p!==s.p){const salt=crypto.getRandomValues(new Uint8Array(16));kc={p:s.p,salt,key:await key(s.p,salt)};KC[s.id]=kc}
+   e={id:s.id,uh:await uhash(s.u),salt:b64(kc.salt),...await seal(kc.key,kidRec(s))};KIDS[s.id]=e;LAST["kid:"+s.id]=j}
+  kids.push(e)}
+ for(const id of Object.keys(KIDS))if(!st.find(s=>s.id===id)){delete KIDS[id];delete LAST["kid:"+id]}
+ const tj=JSON.stringify(st);
+ if(tj!==LAST.t||!TEACH){TEACH={salt:TD.salt,...await seal(TK,{students:st})};LAST.t=tj}
+ return{v:1,ts:Date.now(),pub:{title:S.title,sub:S.sub},teacher:TEACH,kids}}
+function dirty(){CHG=true;setStat("Saving…");clearTimeout(timer);timer=setTimeout(()=>{chain=chain.then(flush).catch(e=>setStat("Could not save: "+(e.message||"error"),1))},700)}
+async function flush(){
+ const st=S.students.map(normOne);
+ if(st.find(s=>!s.u||s.p.length<8))return setStat("Each parent needs a username and a password of 8+ characters. Not saved yet.",1);
+ if(new Set(st.map(s=>s.u)).size!==st.length)return setStat("Two parents have the same username. Not saved yet.",1);
+ OUTD=await buildData(st);CHG=false;PEND=true;
+ try{localStorage.setItem("sia-draft",JSON.stringify(OUTD))}catch(e){}
+ const b=document.querySelector&&document.querySelector("[data-dl]");if(b)b.className="hl";
+ setStat("Saved on this device. Tap “Download data.json”, then upload it to publish.")}
+function download(){if(!OUTD)return;
+ const b=new Blob([JSON.stringify(OUTD)],{type:"application/json"});const a=document.createElement("a");
+ a.href=URL.createObjectURL(b);a.download="data.json";document.body.appendChild(a);a.click();
+ setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1500);
+ setStat("Downloaded. Upload data.json to your site to publish these changes.")}
+
+/* ---------- sign-in flows ---------- */
+async function init(){
+ if(!(window.crypto&&crypto.subtle)){M="nocrypto";return go()}
+ try{const r=await fetch("data.json",{cache:"no-store"});if(!r.ok)throw 0;DATA=await r.json()}catch(e){DATA=null}
+ if(!DATA||!DATA.teacher){M="noload";return go()}
+ PUB=DATA.pub||PUB;M="login";go()}
+async function tryT(pw,T){try{const k=await key(pw,unb64(T.salt));return{k,d:await open(k,T)}}catch(e){return null}}
+async function tLogin(pw){
+ let dr=null;try{dr=JSON.parse(localStorage.getItem("sia-draft")||"null")}catch(e){}
+ let r=null,src=null;
+ if(dr&&dr.teacher&&dr.ts>(DATA.ts||0)){r=await tryT(pw,dr.teacher);if(r)src=dr}
+ if(!r){r=await tryT(pw,DATA.teacher);src=DATA}
+ if(!r)return false;
+ TK=r.k;TD={salt:src.teacher.salt};TEACH=src.teacher;KC={};KIDS={};src.kids.forEach(k=>KIDS[k.id]=k);
+ S={title:src.pub.title,sub:src.pub.sub,students:r.d.students};
+ LAST={t:JSON.stringify(S.students.map(normOne))};S.students.forEach(s=>{LAST["kid:"+s.id]=kjson(normOne(s))});
+ OUTD=src;PEND=src!==DATA;CHG=false;
+ M="teacher";edit=true;cur=null;tab=0;ERR="";SERR=false;
+ STAT=PEND?"Unpublished changes loaded from this device. Download data.json to publish.":"";return true}
+async function pLogin(u,pw){u=u.trim().toLowerCase();if(!u||!pw)return false;
+ const uh=await uhash(u);
+ for(const d of DATA.kids.filter(k=>k.uh===uh)){
+  try{const k=await key(pw,unb64(d.salt));const rec=await open(k,d);
+   S={title:PUB.title,sub:PUB.sub,students:[rec]};cur=0;tab=0;edit=false;M="parent";ERR="";return true}catch(e){}}
+ return false}
+async function logout(msg){
+ if(M=="teacher"){clearTimeout(timer);try{await chain;if(CHG)await flush()}catch(e){setStat("Could not save: "+(e.message||"error"),1)}if(SERR){go();return}}
+ S=null;TK=null;TEACH=null;KIDS={};KC={};LAST={};OUTD=null;edit=false;cur=null;tab=0;M="login";ERR=typeof msg=="string"?msg:"";CERR="";LU="";busy=false;STAT="";SERR=false;PEND=false;CHG=false;go()}
+
+/* ---------- views ---------- */
+const hero=(t,sub,ed)=>`<div class="hero"><div class="bis">بسم الله الرحمن الرحيم</div><h1>${ed?f("title",t):E(t)}</h1><p>${ed?f("sub",sub,"",1):E(sub)}</p><div class="orn"></div></div>`;
+const card=msg=>`${hero(PUB.title,PUB.sub)}<main><div class="pn lg"><p style="margin:0">${msg}</p></div></main>`;
+const bar=()=>`<div class="top"><span>${M=="teacher"?"Teacher":"Signed in · "+E(S.students[0].name)}</span><span class="grow"></span><span id="stat" class="${SERR?"serr":""}">${E(STAT)}</span>${M=="teacher"?`<button data-ed>${edit?"Preview as parent":"Edit"}</button><button data-dl class="${PEND?"hl":""}">Download data.json</button>`:""}<button data-out>Log out</button></div>`;
+function loginView(){const t=LT=="t";
+ return `${hero(PUB.title,PUB.sub)}<main><form class="pn lg" id="lf"><div class="tabs"><button type="button" data-lt="p" class="${t?"":"on"}">Parent login</button><button type="button" data-lt="t" class="${t?"on":""}">Teacher login</button></div>
+${t?"":`<label for="lu">Username</label><input id="lu" autocomplete="username" autocapitalize="none" spellcheck="false" value="${E(LU)}">`}
+<label for="lp">${t?"Teacher password":"Password"}</label><input id="lp" type="password" autocomplete="current-password">
+<button class="zoom btn" ${busy?"disabled":""}>${busy?"Checking…":"Sign in"}</button><div class="err">${E(ERR)}</div></form></main>`}
+function home(){
+ const tbl=edit?`<div class="pn" style="margin-top:18px"><h3>Parent logins</h3><div class="tbw"><table class="tb"><tr><th>Student</th><th>Username</th><th>Password</th><th></th></tr>${S.students.map((s,i)=>`<tr><td>${E(s.name)}</td><td>${f(`students.${i}.u`,s.u)}</td><td>${f(`students.${i}.p`,s.p)}</td><td><button class="add" style="margin:0" data-gen="${i}">New</button></td></tr>`).join("")}</table></div><p class="mut">Send each parent their own username and password privately. Changing a password signs that parent out. Passwords need 8+ characters; “New” makes a strong random one.</p></div>
+<div class="pn"><h3>Teacher password</h3><form id="cf"><label class="mut" for="np">New password (10+ characters)</label><input id="np" type="password" autocomplete="new-password"><button class="add">Change teacher password</button><div class="err" style="color:var(--green)">${E(CERR)}</div></form></div>`:"";
+ return `${hero(S.title,S.sub,edit)}<main><div class="grid">${S.students.map((s,i)=>`<button class="sc" data-o="${i}"><div class="av">${E((s.name||"?")[0])}</div><h3>${E(s.name)}</h3><small>Age ${E(s.age)} · ${E(s.time)}</small><span class="tag">${E(s.level)}</span><div class="bar"><i style="width:${avg(s)}%"></i></div></button>`).join("")}</div>${edit?`<button class="add" data-add>+ Add student</button>`:""}${tbl}</main>`}
+function stu(){const s=S.students[cur],P=`students.${cur}.`,zl=validUrl(s.zoom);
+ const tabs=["Classes","Progress & Remarks","Year-End Assessment"];let b="";
+ if(tab==0)b=`<div class="pn"><h3>Zoom Class</h3>${edit?"":`<p class="mut" style="margin:0 0 6px">${E(s.time)}</p>`}
+<div class="row"><b>Link</b>${edit?f(P+"zoom",s.zoom,"Paste the Zoom link here"):(zl?`<a href="${E(s.zoom)}" target="_blank" rel="noopener" style="color:var(--green);word-break:break-all">${E(s.zoom)}</a>`:`<span class="mut">The class link will appear here.</span>`)}</div>
+<div class="row"><b>Meeting ID</b>${edit?f(P+"zid",s.zid||"","e.g. 123 456 7890"):E(s.zid||"—")}</div>
+<div class="row"><b>Passcode</b>${edit?f(P+"zpass",s.zpass||""):E(s.zpass||"—")}</div>
+${!edit&&zl?`<a class="zoom btn" style="text-decoration:none" href="${E(s.zoom)}" target="_blank" rel="noopener">Join Zoom class</a>`:""}</div>
+<div class="pn"><h3>Scheme of Work</h3>${s.scheme.map((r,j)=>`<div class="row"><b>${f(P+`scheme.${j}.t`,r.t)}</b><span style="flex:1">${f(P+`scheme.${j}.x`,r.x)}</span>${edit?`<button class="x" data-d="${P}scheme.${j}">×</button>`:""}</div>`).join("")}${edit?`<button class="add" data-a="${P}scheme">+ Add topic</button>`:""}</div>
+<div class="pn"><h3>Class Details</h3><div class="row"><b>Level</b>${f(P+"level",s.level)}</div><div class="row"><b>Time</b>${f(P+"time",s.time)}</div></div>
+${edit?`<div class="pn"><h3>Parent Login</h3><div class="row"><b>Username</b>${f(P+"u",s.u)}</div><div class="row"><b>Password</b>${f(P+"p",s.p)}</div><p class="mut" style="margin:6px 0 0">Only this child's parent can open this portfolio with these details. Changing the password signs them out.</p></div>`:""}`;
+ if(tab==1)b=`<div class="pn"><h3>Skills Overview</h3>${s.skills.map((k,j)=>`<div class="sk"><div><span>${f(P+`skills.${j}.n`,k.n)}</span><span>${edit?`<input type="number" min="0" max="100" data-p="${P}skills.${j}.v" value="${k.v}" style="width:80px">`:k.v+"%"}${edit?`<button class="x" data-d="${P}skills.${j}">×</button>`:""}</span></div><div class="bar"><i style="width:${k.v}%"></i></div></div>`).join("")}${edit?`<button class="add" data-a="${P}skills">+ Add skill</button>`:""}</div><div class="pn"><h3>Teacher's Remarks</h3>${s.remarks.length?"":"<p style='color:var(--mute)'>No remarks yet.</p>"}${s.remarks.map((r,j)=>`<div class="rm"><time>${edit?`<input type="date" data-p="${P}remarks.${j}.d" value="${E(r.d)}" style="width:170px">`:E(new Date(r.d).toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}))}</time><div>${f(P+`remarks.${j}.x`,r.x,"Write a remark…",1)}</div>${edit?`<button class="x" data-d="${P}remarks.${j}">×</button>`:""}</div>`).join("")}${edit?`<button class="add" data-a="${P}remarks">+ Add remark</button>`:""}</div>`;
+ if(tab==2){const a=s.as,sc=a.items.filter(i=>i.v!=="").map(i=>+i.v),t=sc.length?Math.round(sc.reduce((x,y)=>x+y,0)/sc.length):null;
+  b=`<div class="pn"><h3>Year-End Assessment</h3><p><span class="st">${f(P+"as.status",a.status)}</span> &nbsp; ${f(P+"as.date",a.date)}</p><div class="sc2">${t===null?"Pending":t+"%"}</div>${a.items.map((i,j)=>`<div class="sk"><div><span>${f(P+`as.items.${j}.n`,i.n)}</span><span>${edit?`<input type="number" min="0" max="100" data-p="${P}as.items.${j}.v" value="${i.v}" placeholder="%" style="width:80px">`:(i.v===""?"—":i.v+"%")}${edit?`<button class="x" data-d="${P}as.items.${j}">×</button>`:""}</span></div><div class="bar"><i style="width:${i.v||0}%"></i></div></div>`).join("")}${edit?`<button class="add" data-a="${P}as.items">+ Add criterion</button>`:""}</div><div class="pn"><h3>Final Comments</h3>${f(P+"as.c",a.c||(edit?"":"To be completed at the end of the year, in sha Allah."),"Final comments…",1)}</div>`}
+ return `<main style="margin-top:0;padding-top:8px">${M=="teacher"?`<button class="back" data-h>← All students</button>`:`<div style="height:18px"></div>`}<div class="ph"><div class="av">${E((s.name||"?")[0])}</div><div><h2>${f(P+"name",s.name)}</h2><div class="meta">Age ${f(P+"age",s.age)} · ${E(s.level)}</div></div>${zl?`<a class="zoom" href="${E(s.zoom)}" target="_blank" rel="noopener">Join Zoom class</a>`:""}</div><div class="tabs">${tabs.map((n,i)=>`<button class="${i==tab?"on":""}" data-t="${i}">${n}</button>`).join("")}</div>${b}${edit&&M=="teacher"?`<button class="add" data-rs>${arm?"Tap again to confirm removal":"Remove this student"}</button>`:""}</main>`}
+function go(){let h="";
+ if(M=="load")h=card("Loading…");
+ else if(M=="nocrypto")h=card("This browser can't open the secure portfolios. Please try an up-to-date Chrome, Safari or Firefox.");
+ else if(M=="noload")h=card("We couldn't load the portfolios. Please check your connection and refresh the page.");
+ else if(M=="login")h=loginView();
+ else h=bar()+(cur===null?home():stu());
+ $("app").innerHTML=h}
+
+/* ---------- events ---------- */
+const at=p=>{const k=p.split(".");let o=S;k.slice(0,-1).forEach(x=>o=o[x]);return[o,k.at(-1)]};
+document.addEventListener("input",e=>{const p=e.target.dataset&&e.target.dataset.p;if(!p||M!="teacher")return;const[o,k]=at(p);o[k]=e.target.value;dirty()});
+document.addEventListener("submit",async e=>{e.preventDefault();if(busy)return;const id=e.target.id;ERR="";
+ if(id=="lf"){const u=$("lu")?$("lu").value:"",pw=$("lp").value;LU=u;busy=true;go();
+  let ok=false;try{ok=LT=="t"?await tLogin(pw):await pLogin(u,pw)}catch(x){ok=false}
+  busy=false;if(!ok)ERR=LT=="t"?"That password isn't right. Please try again.":"That username or password isn't right. Please try again.";go()}
+ else if(id=="cf"&&M=="teacher"){const a=$("np").value;
+  if(a.length<10){CERR="";ERR="";setStat("Use at least 10 characters for the teacher password.",1);return}
+  const salt=crypto.getRandomValues(new Uint8Array(16));TK=await key(a,salt);TD={salt:b64(salt)};LAST.t=null;TEACH=null;
+  CERR="Password changed. Download data.json and upload it to publish.";dirty();go()}});
+document.addEventListener("click",async e=>{const t=e.target.closest("[data-o],[data-h],[data-t],[data-a],[data-d],[data-add],[data-rs],[data-ed],[data-out],[data-lt],[data-dl],[data-gen]");if(!t)return;const D=t.dataset;
+ if("out"in D){await logout();return}
+ if("lt"in D){LT=D.lt;ERR="";go();return}
+ if(M!="teacher"&&M!="parent")return;
+ if("dl"in D&&M=="teacher"){clearTimeout(timer);try{await chain;if(CHG||!OUTD)await flush()}catch(x){setStat("Could not save: "+(x.message||"error"),1)}if(!SERR)download();return}
+ if("ed"in D&&M=="teacher")edit=!edit;
+ else if("gen"in D&&M=="teacher"){S.students[+D.gen].p=genPass();dirty()}
+ else if("add"in D&&M=="teacher"){const nb=JSON.parse(JSON.stringify(blank));nb.id=newId();nb.u=uniq("student"+(S.students.length+1),S.students.map(s=>String(s.u||"").toLowerCase()));nb.p=genPass();S.students.push(nb);dirty()}
+ else if("rs"in D&&M=="teacher"){if(!arm){arm=1;go();return}S.students.splice(cur,1);cur=null;arm=0;dirty()}
+ else if("o"in D){cur=+D.o;tab=0;arm=0;scrollTo(0,0)}
+ else if("h"in D&&M=="teacher"){cur=null;arm=0}
+ else if("t"in D)tab=+D.t;
+ else if(D.a&&M=="teacher"){const[o,k]=at(D.a);o[k].push({...tpl[k]});dirty()}
+ else if(D.d&&M=="teacher"){const[o,k]=at(D.d);o.splice(+k,1);dirty()}
+ go()});
+go();init();
+</script></body></html>
